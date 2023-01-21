@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+/* FOR ALL PAGES */
+body {
+    background: linear-gradient(to left top, #2d54c9, #9fb0e0);
+    background-attachment: fixed;
+    font-family: Fredoka One;
+
+}
+.TopHead {
+    color:#029AA5;
+    z-index:1;
+}
+.container {
+    background-color: aliceblue;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 90%;
+    width: 90%;
+    border-radius: 1rem;
+}
+#Northview {
+    position: fixed;
+    width: 35%;
+    z-index:1;
+    top: max(0%, 0%);
+    left: max(44%, 65.2%);
+}
+
+#backbutton{
+    background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+  margin: 4px 2px;
+  z-index:1;
+}
+
+
+
+
+/*Content for index.html (base page) */
+#welcome {
+    font-size: 8.5vw;
+    padding-left:3%;
+    color:#029AA5;
+}
+
+#attackhelicopter{
+    font-size: 165%;
+    padding-left:3%;
+    color:#01B8C6;
+    width:16ch;
+}
+
+#spanstudenttext{
+    color:#00A280;
+}
+
+#spanadmintext{
+    color:#5EA8FF;
+}
+
+h2 {
+    font-size: 5.3vw;
+    color:#01B8C6;
+}
+#student-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+/*iphone*/
+@media screen and (max-width: 1000px){
+    
+    .Regular {
+        visibility: hidden;
+        display:none;
+    }
+    .irregular { 
+        margin-top:3.5rem;
+    }
+    
+
+}
+
+@media screen and (min-width: 1000px){
+    .irregular {
+        visibility: hidden;
+        display:none;
+    }
+
+}
+#student_button {
+
+    position: relative;
+    width: clamp(40%, 73%, 100%);
+    user-zoom: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    text-align: cent;
+
+}
+#admin_button {
+    position: relative;
+    width: clamp(40%, 73%, 100%);
+    user-zoom: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    
+    }
+
+
+
+@media screen and (min-width: 1000px){
+    #student_button {
+        width: 65%;
+    }
+    #admin_button {
+        width: 65%;
+    }
+    #welcome {
+        font-size: 6vw;
+    }
+    #Northview {
+        width:27%;
+        left: max(44%, 73.4%);
+    }
+
+}
+@media screen and (max-height: 700px){
+
+    .irregular { 
+        margin-top:0rem;
+    }
+    #student_button {
+        width:65%;
+    }
+    #admin_button {
+        width:65%;
+    }
+    
+
+}
+
+
+/*Admin Html page*/
+
+#yay {
+    text-align: center;
+}
+.admin_form{
+    display:flex;
+  justify-content: center;
+
+}
+h3 {
+    text-align:center;
+    font-size:150%;
+}
+label {
+    font-size:150%;
+    text-align: cente;
+}
+input[type=submit] {
+    background-color: #029AA5;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family : inherit;    
+}
+input[type=submit]:hover{
+    background-color: #2d54c9;
+    transition: 0.3s;
+}
+input[type=text]{
+    width:100%;
+}
+input[type=password]{
+    width:100%;
+}
+.AdminTopHead{
+    color:#029AA5;
+}
+
+#Portal {
+    color: #029AA5;
+}
+
+.Please {
+    color:#5EA8FF;
+}
+
+@media screen and (max-width: 1000px){
+    .AdminTopHead{
+        color:#029AA5;
+        width: clamp(1ch, 1ch, 1ch);
+        padding: 3.5%;
+}
+    #AdminNorthview {
+        position: fixed;
+        width: 45%;
+        z-index:1;
+        top: max(0%, 0%);
+        left: max(44%, 55.3%);
+    }
+
+    #Quote
+    {
+        visibility: hidden;
+    }
+}
+
+
+@media screen and (min-width: 1000px){
+
+    #AdminNorthview {
+        position: fixed;
+        width: 28%;
+        z-index:1;
+        top: max(0%, 0%);
+        left: max(44%, 72.3%);
+    }
+
+    #Quote
+    {
+        color:#5EA8FF;
+    }
+
+}      
+
+.backbutton{
+    position:fixed;
+    font-size:150%;
+}
+
+#student-button-frame{
+    text-align:center;
+}
+
+#admin-button-frame{
+    text-align:center;
+}
+.student_form { 
+    display:flex;
+    justify-content: center;
+}
+.AdminDirectForm {
+    display:flex;
+    justify-content: center;
+}
+#adminportalresults {
+    text-align: center;
+}
+#containerPortal {
+    overflow-y: scroll;
+    overflow-x:hidden
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Northview Attendance</title>
+  <link href="/static/style.css" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='NVHS.png') }}">
+
+</head>
+
+
+<body>
+
+  <div class="container">
+    <header>  
+      <h1 id = "welcome">Welcome!</h1>
+      <h1 id="attackhelicopter"> Are you a <span id="spanstudenttext"> student </span> or <span id="spanadmintext">admin</span>? </h1>
+    </header>
+    <table class="Regular">
+      <tr>
+        <div class="buttons" style = "text-align:center;">
+          <td id = "student-button-frame"><a  href="/student"><img id="student_button" src="/templates/STIMG.png" alt="Student Button"></a></td>
+          <td id = "admin-button-frame"><a href="/admin"> <img id="admin_button" src="/templates/AMG.png" alt="Admin Button"></a></td> 
+        </div>
+      <tr>
+        <!--
+        <td style = "vertical-align:top;"><h2 style = "text-align:center; vertical-align:top;">Student</h2></td>   
+        <td stlye = "vertical-align:top;"><h2 style = "text-align:center; vertical-align:top;">Admin</h2></td>
+        -->
+      </tr>
+    </table>
+    <table class="irregular">
+      <tr style="width:50%">
+        <td style = "text-align: center; vertical-align:bottom;"><a  href="student.html"><img id="student_button" src="/templates/STIMG.png" alt="Student Button"></a></td>
+      </tr>
+      <tr style="width:50%">
+        <td style = "text-align: center; vertical-align: bottom;"><a href="admin.html"> <img id="admin_button" src="/templates/AMG.png" alt="Admin Button" style="vertical-align: bottom;"></a></td>
+      </tr>
+    </table>
+    <a href="/"><img id="Northview" src="/templates/Northviewlogo.png"></a>
+  </div>
+</body>
+</html>
+
+
+
+<!--TODO FOR ALL PAGES - Fix styling/font colors + Add stuff to fill in the white space (take creative liberty)-->
+<!--TODO BE HAPPY/PROUD OF THE WEBISTE :)-->
+
+
