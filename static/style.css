@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+/* FOR ALL PAGES */
+body {
+    background: linear-gradient(to left top, #2d54c9, #9fb0e0);
+    background-attachment: fixed;
+    font-family: Fredoka One;
+
+}
+
+
+
+@keyframes animate{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+
+
+@media screen and (max-width: 1000px){
+
+.line1{
+    position: fixed;
+    margin-top:95%;
+    width:250%;
+    height: 10%;
+    background: linear-gradient( rgb(63, 153, 255), rgb(93, 215, 219));
+    border-radius: 38px;
+    rotate: -35deg;
+    z-index:-1;
+    left:-50%;
+}
+
+}
+
+@media screen and (min-width: 1000px){
+    .line1{
+        position: fixed;
+        height: 16%;
+        background: linear-gradient( rgb(63, 153, 255), rgb(93, 215, 219));
+        border-radius: 88px;       
+        rotate: -35deg;
+        z-index:-1;
+        left:13%;
+        width:220%;
+        margin-top:-44.2%;
+    }
+
+    .line2{
+        position: fixed;
+        height: 16%;
+        background: linear-gradient( rgb(63, 153, 255), rgb(93, 215, 219));
+                border-radius: 88px;
+       
+        rotate: -35deg;
+        z-index:-1;
+        left:27.3%;
+        width:180%;
+        margin-top:-20.2%;
+    }
+
+    .line3{
+        position: fixed;
+        height: 16%;
+        background: linear-gradient( rgb(63, 153, 255), rgb(93, 215, 219));
+                border-radius: 88px;
+     
+        rotate: -35deg;
+        z-index:-1;
+        left:22.3%;
+        width:260%;
+        margin-top:-25.8%;
+    }
+    
+    }
+
+/* width */
+::-webkit-scrollbar {
+    width:10px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background:transparent;
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #19bac581;
+    border-radius: 1rem;
+    opacity:1;
+}
+
+
+.TopHead {
+    color:#029AA5;
+    z-index:1;
+}
+.container {
+    background-color: aliceblue;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 90%;
+    width: 90%;
+    border-radius: 1rem;
+    overflow:scroll;
+    z-index:1;
+    overflow-x:hidden;
+    overflow-y:overlay;
+}
+#Northview {
+    position: fixed;
+    width: 35%;
+    z-index:1;
+    top: max(0%, 0%);
+    left: max(44%, 65.2%);
+}
+
+#backbutton{
+    background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+  margin: 4px 2px;
+  z-index:1;
+}
+
+
+
+
+/*Content for index.html (base page) */
+#welcome {
+    font-size: 8.5vw;
+    padding-left:3%;
+    color:#029AA5;
+    z-index:11;
+    position: relative;
+}
+
+#attackhelicopter{
+    font-size: 165%;
+    padding-left:3%;
+    color:#01B8C6;
+    width:16ch;
+    border-radius: 25px;
+}
+
+#spanstudenttext{
+    color:#00A280;
+}
+
+#spanadmintext{
+    color:#5EA8FF;
+}
+
+h2 {
+    font-size: 5.3vw;
+    color:#01B8C6;
+}
+#student-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+/*iphone*/
+@media screen and (max-width: 1000px){
+    
+    .Regular {
+        visibility: hidden;
+        display:none;
+    }
+    .irregular { 
+        margin-top:3.5rem;
+    }
+    #student_button{
+        margin-top:-15%;
+        margin-right: 27%;
+
+    }
+    #admin_button{
+        margin-top:35%;
+        margin-left: 27%;
+    }
+
+}
+
+@media screen and (min-width: 1000px){
+    .irregular {
+        visibility: hidden;
+        display:none;
+    }
+
+}
+#student_button {
+
+    position: relative;
+    width: clamp(40%, 73%, 100%);
+    user-zoom: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    text-align: cent;
+
+}
+#admin_button {
+    position: relative;
+    width: clamp(40%, 73%, 100%);
+    user-zoom: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    
+    }
+
+
+
+@media screen and (min-width: 1000px){
+    #student_button {
+        width: 65%;
+    }
+    #admin_button {
+        width: 65%;
+    }
+    #welcome {
+        font-size: 6vw;
+    }
+    #Northview {
+        width:27%;
+        left: max(44%, 73.4%);
+    }
+
+}
+@media screen and (max-width: 400px){
+
+    .irregular { 
+        margin-top:0rem;
+    }
+    #student_button{
+        margin-top:-5%;
+        width:60%;
+        margin-right: 39%;
+
+    }
+    #admin_button{
+        margin-top:17%;
+        width:60%;
+        margin-left: 39%;
+    }
+    .line1{
+        position: fixed;
+        margin-top:78%;
+        width:250%;
+        height: 10%;
+        background: linear-gradient( rgb(63, 153, 255), rgb(93, 215, 219));
+            border-radius: 38px;
+    
+        rotate: -35deg;
+        z-index:-1;
+        left:-50%;
+    }
+
+}
+
+
+/*Admin Html page*/
+
+#yay {
+    text-align: center;
+}
+.admin_form{
+    display:flex;
+  justify-content: center;
+
+}
+h3 {
+    text-align:center;
+    font-size:150%;
+}
+label {
+    font-size:150%;
+    text-align: cente;
+}
+input[type=submit] {
+    background-color: #029AA5;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family : inherit; 
+    border-radius: 35px;   
+    font-size:23px;
+}
+input[type=submit]:hover{
+    background-color: #2d54c9;
+    transition: 0.3s;
+}
+input[type=text]{
+    width:100%;
+}
+input[type=password]{
+    width:100%;
+}
+.AdminTopHead{
+    color:#029AA5;
+}
+
+#Portal {
+    color: #029AA5;
+}
+
+.Please {
+    color:#5EA8FF;
+
+}
+
+@media screen and (max-width: 1000px){
+    .AdminTopHead{
+        color:#029AA5;
+        width: clamp(1ch, 1ch, 1ch);
+        padding: 3.5%;
+}
+    #AdminNorthview {
+        position: fixed;
+        width: 45%;
+        z-index:1;
+        top: max(0%, 0%);
+        left: max(44%, 55.3%);
+    }
+
+    #Quote
+    {
+        visibility: hidden;
+    }
+}
+
+
+@media screen and (min-width: 1000px){
+
+    #AdminNorthview {
+        position: fixed;
+        width: 28%;
+        z-index:1;
+        top: max(0%, 0%);
+        left: max(44%, 72.3%);
+    }
+
+    #Quote
+    {
+        color:#5EA8FF;
+    }
+
+}      
+
+.backbutton{
+    position:fixed;
+    font-size:150%;
+}
+
+#student-button-frame{
+    text-align:center;
+}
+
+#admin-button-frame{
+    text-align:center;
+}
+.student_form { 
+    display:flex;
+    justify-content: center;
+}
+.AdminDirectForm {
+    display:flex;
+    justify-content: center;
+}
+#adminportalresults {
+    text-align: center;
+}
+#containerPortal {
+    overflow-y: scroll;
+    overflow-x:hidden;
+}
+
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    text-align: center;
+    font-family: Fredoka One;
+}
+
+
+

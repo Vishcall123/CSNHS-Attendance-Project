@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Northview Attendance</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="/static/style.css" rel="stylesheet" type="text/css"/>
+  <link rel="icon" href="/static/NVHS.png">
+  
+</head>
+
+<body>
+   <div class="container"> 
+   
+    <header id="yay">
+      <h1 class="AdminTopHead">Northview Attendance </h1>
+    </header>
+      <h3 style = "color:#029AA5;">Student Form</h3>
+      <div class="student_form">
+        <form action="#" method="post">       
+          <center>
+            <label for="name" class="student-labels" style = "color:#5EA8FF;">First and Last Name</label>
+            <br>
+            <br>
+            <input type="text" name="name" placeholder="First and Last Name" style = "width:100%; border-radius: 20px; text-align: center; font-family: Fredoka One;">
+            <br>
+            <br>
+            <label for="month" class="student-labels"   style = "color:#5EA8FF;">Date</label>
+            <br>
+            <br>
+            <input type="date" id="month" name="month" style="width:100%; border-radius: 20px;text-align: center; font-family: Fredoka One;">
+            <br>
+            <h3 style = "color:#029AA5;">Action</h3>
+            <label for="leaving" class="student-labels"  style = "color:#5EA8FF;">Leaving</label>
+            <input id = "leaving" type="radio" name="action" value="Leaving">
+            <label for="returning" class="student-labels"  style = "color:#5EA8FF;">Returning</label>
+            <input type="radio" name="action" value="Returning">
+            <br>
+            <br>
+            <label for="reason" class="student-labels" style = "color:#029AA5;">Reason</label>
+            <br>
+            <br>
+            <label for="returning" class="student-labels"  style = "color:#5EA8FF;">WBL</label>
+            <input type="radio" name="reason" value="WBL">
+            <label for="returning" class="student-labels"  style = "color:#5EA8FF;">University</label>
+            <input type="radio" name="reason" value="University">            
+            <br>
+            <br>
+            <textarea placeholder="If none of the above: Write a reason" name="reason2" id="reason" ></textarea>
+            <br>
+            <br>
+            <input type="submit" value="Submit" style="width:100%;">
+        </center>
+        </form>
+      </div>
+      <a href="/templates/index.html"><img id="Northview" src="/templates/Northviewlogo.png"></a>
+    </div>
+</body>
+
+</html>
+
